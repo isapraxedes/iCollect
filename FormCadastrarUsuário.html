@@ -10,7 +10,7 @@
 </head>
 <body class="bg-light">
 	<div class="page-header navbar navbar-expand-lg navbar-white bg-white"> 
-		<button type="button" class="btn btn-success btn-sm loggin">Fazer Loggin</button>
+		<a class = "loggin" href="TelaLoggin.html"><button type="button" class="btn btn-success btn-sm">Fazer Loggin</button></a>
 	</div>
 
 	<div class="jumbotron  jumbotron-center bg-white">
@@ -103,7 +103,19 @@
 					<label class="control-label" for="senha" >Senha:</label>
 						<input type="password" id="senha" class="form-control" placeholder="Digite a senha" required>
 				</div>
-				<button type="button" class="btn btn-primary btn-md">Cadastrar</button>
+				<div class="form-group">
+					<label>Termos de Uso:</label><br/>
+					<textarea class="form-control" name="useTermsText"  disabled="true">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</textarea>
+				</div>
+				<div class="form-group">
+					<input type="checkbox" name="useTerms" required="true">
+					<span><b>Li e concordo</b> com os termos de uso</span>
+				</div>
+				
+				<div class="btn-group float-right">
+					<input type="reset" name="clear" value="Limpar" class="btn">
+					<button id="buttonCreate" class="btn btn-primary" onclick="create();">Cadastrar</button>
+				</div>
 			</form>
 		</div>
 	</div>

@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/stylesLoggin.css">
+	<script src="lib/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css">
+	<title>iCollect</title>
+</head>
+<body class="bg-light">
+	<div class="page-header navbar navbar-expand-lg navbar-white bg-white"> 
+		<a class = "loggin" href="TelaLoggin.html"><button type="button" class="btn btn-success btn-sm">Fazer Loggin</button></a>
+	</div>
+
+	<div class="jumbotron  jumbotron-center bg-white">
+		<div class="container">
+			<H3 id="Titulo" class="text-center">Fazer Loggin</H3>
+
+			<form enctype="multipart/form-data">
+				<div id="emailGroup" class="form-group">
+					<label class="control-label" for="email" >Email</label>
+					<input type="email" id="email" class="form-control" placeholder="Digite o email" required>
+				</div>
+				<div id="senhaGroup" class="form-group">
+					<label class="control-label" for="senha" >Senha:</label>
+					<a class="float-right" href="#">Esqueceu Senha?</a>
+					<input type="password" id="senha" class="form-control" placeholder="Digite a senha" required>
+				</div>
+				<button type="button" class="btn btn-primary btn-lg btn-block">Entrar</button>
+				<span>Não tem cadastro? <a href="#"><b>Cadastre-se</b></a></span>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
